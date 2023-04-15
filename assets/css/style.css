@@ -1,0 +1,42 @@
+body {
+  background-color: aqua;
+  color: #444;
+}
+
+.title-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biodata {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.biodata h2 {
+  padding-bottom: 20px;
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biodata-foto {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-right: 100px;
+}
+
+.biodata-foto h3 {
+  width: 354px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
