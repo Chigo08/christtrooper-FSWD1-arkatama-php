@@ -50,8 +50,6 @@ if (isset($_POST['aksi'])) {
       move_uploaded_file($_FILES['avatar']['tmp_name'], '../../../assets/img/task_19/' . $_FILES['avatar']['name']);
     }
 
-    echo "<br> <a href=../task_19.php>Home</a>";
-
     $query = "UPDATE users SET name='$name', role='$role', phone='$phone', email='$email', password='$pass', address='$address', avatar='$avatar' WHERE id = '$id';";
     $sql = mysqli_query($conn, $query);
 

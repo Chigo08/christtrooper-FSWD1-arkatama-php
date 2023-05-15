@@ -1,6 +1,8 @@
 <?php
 include 'includes/dbh.inc.php';
 
+session_start();
+
 $query = "SELECT * FROM users;";
 $sql = mysqli_query($conn, $query);
 $no = 0;
@@ -86,9 +88,9 @@ $no = 0;
         </tbody>
       </table>
     </div>
-  </div>
+    <a href="includes/logout.php" type="button" class="btn btn-danger text-center">Logout</a>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

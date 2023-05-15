@@ -103,6 +103,7 @@ if (isset($_GET['ubah'])) {
                   echo "required";
                 }; ?> class="form-control" type="file" name="avatar" id="formFileMultiple" accept="image/*" multiple>
       </div>
+      
       <!-- Button -->
       <div class="row">
         <div class="col mt-4">
